@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+1000.times do
+  a = Article.new()
+  a.title = Faker::ElderScrolls.dragon
+  a.content = Faker::ElderScrolls.race
+  a.save
+end
